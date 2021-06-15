@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <ProgressBar
+                android:id="@+id/profile_ProgessBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/profile_editImageButton2"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_alignEnd="@+id/profile_Image"
+                android:layout_alignBottom="@+id/profile_Image"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                />
+
+            <Button
+                android:id="@+id/profile_editImageButton"
+                android:layout_width="18dp"
+                android:layout_height="17dp"
+                android:layout_alignTop="@+id/profile_editImageButton2"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="-29dp"
+                android:layout_toStartOf="@+id/profile_editImageButton2"
+                android:background="@drawable/ic_edit_black_24dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/profile_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/profile_FollowerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Followers"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/textHintColor"
+        app:cardBackgroundColor="#303030"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/profile_ViewProfile"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_button"
+                android:text="View Profile"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/profile_UploadImage"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Upload Image"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/profile_editTags"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Edit Tags"
+                android:textColor="@color/white" />
+
+            <!--
+            <Button
+                android:id="@+id/profile_viewFollowedUsers"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Following"
+                android:textColor="@color/white" />-->
+
+            <Button
+                android:id="@+id/profile_LogOut"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Logout"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

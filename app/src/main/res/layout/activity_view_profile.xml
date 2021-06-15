@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfile"
+    android:background="@color/darkGray"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/viewProfile_userImage"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/viewProfile_username"
+                android:layout_width="228dp"
+                android:layout_height="30dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/viewProfile_tags"
+                android:layout_width="228dp"
+                android:layout_height="30dp"
+                android:text="#Tags"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/viewProfile_followers"
+                android:layout_width="228dp"
+                android:layout_height="30dp"
+                android:text="\? Followers"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/viewProfile_followButton"
+                android:layout_width="137dp"
+                android:layout_height="30dp"
+                android:background="@color/eltnamPurple"
+                android:text="Follow"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewProfile_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/viewProfile_portfolioImage1"
+            android:layout_width="250dp"
+            android:layout_height="264dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            android:visibility="invisible"
+            android:background="@drawable/imageborder" />
+
+
+        <ImageView
+            android:id="@+id/viewProfile_portfolioImage2"
+            android:layout_width="160dp"
+            android:layout_height="132dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/viewProfile_portfolioImage1"
+            android:background="@drawable/imageborder"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/art1_fg" />
+
+        <ImageView
+            android:id="@+id/viewProfile_portfolioImage3"
+            android:layout_width="160dp"
+            android:layout_height="133dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="132dp"
+            android:layout_toEndOf="@+id/viewProfile_portfolioImage1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/imageborder"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/art3_foreground" />
+
+        <ImageView
+            android:id="@+id/viewProfile_portfolioImage4"
+            android:layout_width="250dp"
+            android:layout_height="138dp"
+            android:layout_below="@+id/viewProfile_portfolioImage1"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="2dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/imageborder"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/art5_foreground" />
+
+        <ImageView
+            android:id="@+id/viewProfile_portfolioImage5"
+            android:layout_width="160dp"
+            android:layout_height="134dp"
+            android:layout_below="@+id/viewProfile_portfolioImage3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:visibility="invisible"
+            android:adjustViewBounds="true"
+
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/art2_foreground" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

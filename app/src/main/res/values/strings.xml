@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Kaching</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_email_hint">Enter Your Email</string>
+    <string name="login_password_hint">Enter Your Password</string>
+    <string name="login_forgot_password"><u>Forgot password?</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account_text"><u>Don\'t have an account? SIGN UP</u></string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="logo">Logo</string>
+    <string name="sign_up_button_text">Sign Up</string>
+    <string name="continue_text">Continue</string>
+    <string name="registration_successful">Registration Successful!</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="signup_name">Enter Your Name</string>
+    <string name="password_confirm">Confirm Your Password</string>
+    <string name="already_member"><u>Already a member? LOG IN</u></string>
+</resources>
